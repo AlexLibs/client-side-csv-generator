@@ -1,7 +1,6 @@
-client-side-csv-generator
+Client side (Serverless) csv generator
 =========================
 
-Client side (Serverless) csv generator
 
 # Dependencies:
 JQuery
