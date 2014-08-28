@@ -3,6 +3,12 @@ client-side-csv-generator
 
 Client side (Serverless) csv generator
 
+# Dependencies:
+JQuery
+
+# Support:
+http://caniuse.com/#feat=download
+
 # Usage Example:
 
 http://jsbin.com/jajevo/1/
