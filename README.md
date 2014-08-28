@@ -12,12 +12,12 @@ http://jsbin.com/jajevo/1/
     csvGenerator = new CsvGeneretor([['a', 'b', 'c'], ['', 1, 2]], 'my_csv.csv');
     csvGenerator.download(true);
 
-# If you want to create the <a/> element:
+## If you want to create the <a/> element:
 
     csvGenerator = new CsvGeneretor([['a', 'b', 'c'], ['', 1, 2]], 'my_csv.csv');
     csvGenerator.getLinkElement();
 
-# If you want just to get href attribute of the link:
+## If you want just to get href attribute of the link:
 
     csvGenerator = new CsvGeneretor([['a', 'b', 'c'], ['', 1, 2]], 'my_csv.csv');
     csvGenerator.getLinkElement(true);
