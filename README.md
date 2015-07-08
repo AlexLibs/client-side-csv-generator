@@ -10,7 +10,7 @@ http://caniuse.com/#feat=download
 
 ## Usage Example:
 
-http://jsbin.com/jajevo/1/
+http://jsbin.com/bafobowaji/1/
 
 ### Download csv file without server. Just pass data array and choose the file name:
  
