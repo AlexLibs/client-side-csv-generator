@@ -19,7 +19,7 @@ function CsvGenerator(dataArray, fileName, separator, addQuotes) {
                 return '"' + rowData + '"';
             }
 
-            return rowData
+            return rowData;
         });
 
         var type = 'data:text/csv;charset=utf-8';
