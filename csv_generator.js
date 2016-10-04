@@ -37,18 +37,25 @@ function CsvGenerator(dataArray, fileName, separator, addQuotes) {
 
     this.getLinkElement = function (linkText) {
         var downloadLink = this.getDownloadLink();
-        return this.linkElement = this.linkElement || $('<a>' + (linkText || '') + '</a>', {
-            href: downloadLink,
-            download: this.fileName
-        });
+        var fileName = this.fileName;
+        this.linkElement = this.linkElement || (function() {
+            var a = document.createElement('a');
+            a.innerHTML = linkText || '';
+            a.href = downloadLink;
+            a.download = fileName;
+            return a;
+        }());
+        return this.linkElement;
     };
 
     // call with removeAfterDownload = true if you want the link to be removed after downloading
     this.download = function (removeAfterDownload) {
-        this.getLinkElement().css('display', 'none').appendTo('body');
-        this.getLinkElement()[0].click();
+        var linkElement = this.getLinkElement();
+        linkElement.style.display = 'none';
+        document.body.appendChild(linkElement);
+        linkElement.click();
         if (removeAfterDownload) {
-            this.getLinkElement().remove();
+            document.body.removeChild(linkElement);
         }
     };
 }
