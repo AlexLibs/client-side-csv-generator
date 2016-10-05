@@ -3,7 +3,7 @@ Client side (Serverless) csv generator
 
 
 ## Dependencies:
-JQuery
+None
 
 ## Supported browsers:
 http://caniuse.com/#feat=download
