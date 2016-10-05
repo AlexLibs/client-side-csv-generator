@@ -35,4 +35,5 @@ http://jsbin.com/bafobowaji/1/
     // Semi colon separated, all cells quoted
     csvGenerator = new CsvGenerator([['a', 'b', 'c'], ['', 1, 2]], 'my_csv.csv', ';', true); 
 
-    
+## Changes LOG:
+Version v2 (tag v2): get rid of jQuery from deps (thanks to [Denis Lukov's](https://github.com/NeXTs) contribution)
